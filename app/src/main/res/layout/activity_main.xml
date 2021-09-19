@@ -40,14 +40,15 @@
         android:layout_width="match_parent"
         android:layout_height="5pt"
         android:layout_below="@id/convertButton">
+
     </Space>
 
     <LinearLayout
         android:id="@+id/child1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/space1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_below="@id/space1">
 
         <EditText
             android:id="@+id/inputText"
@@ -111,8 +112,8 @@
             android:prompt="@string/inputPrompt"
             android:spinnerMode="dialog"
             android:gravity="center"/>
-
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/child2"
         android:layout_width="match_parent"
@@ -166,7 +167,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/rbWeight" />
+
     </RadioGroup>
+
     <ImageView
         android:id="@+id/img"
         android:layout_width="89dp"
@@ -175,7 +178,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp"
         android:src="@drawable/temperature"
-        android:visibility="visible" />
+        android:visibility="visible" >
+    </ImageView>
 
     <TableLayout
         android:id="@+id/table"
@@ -298,4 +302,15 @@
         </TableRow>
 
     </TableLayout>
+
+    <ImageView
+        android:id="@+id/imgFormula"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/formula"
+        android:layout_below="@id/table"
+        android:layout_marginTop="1pt"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible">
+    </ImageView>
 </RelativeLayout>
